@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>World Clock</h1>
+
+    <div class="container">
+        <div class="card" id="country1">
+            <div class="time-text" id="time1">--:--:--</div>
+            <div class="day-text" id="date1">Select a country</div>
+            <div class="group">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M10,20A10,10 0 1,1 20,10A10,10 0 0,1 10,20M10,2A8,8 0 0,0 2,10A8,8 0 0,0 10,18A8,8 0 0,0 18,10A8,8 0 0,0 10,2M21.7,20.3L17.8,16.4L19.1,15.1L23,19L21.7,20.3Z" /></svg>
+                <input type="text" class="input" id="search1" placeholder="Search country..." oninput="searchCountries(1)">
+                <ul class="results" id="results1"></ul>
+            </div>
+        </div>
+
+        <div class="card" id="country2">
+            <div class="time-text" id="time2">--:--:--</div>
+            <div class="day-text" id="date2">Select a country</div>
+            <div class="group">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M10,20A10,10 0 1,1 20,10A10,10 0 0,1 10,20M10,2A8,8 0 0,0 2,10A8,8 0 0,0 10,18A8,8 0 0,0 18,10A8,8 0 0,0 10,2M21.7,20.3L17.8,16.4L19.1,15.1L23,19L21.7,20.3Z" /></svg>
+                <input type="text" class="input" id="search2" placeholder="Search country..." oninput="searchCountries(2)">
+                <ul class="results" id="results2"></ul>
+            </div>
+        </div>
+
+        <div class="card" id="country3">
+            <div class="time-text" id="time3">--:--:--</div>
+            <div class="day-text" id="date3">Select a country</div>
+            <div class="group">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M10,20A10,10 0 1,1 20,10A10,10 0 0,1 10,20M10,2A8,8 0 0,0 2,10A8,8 0 0,0 10,18A8,8 0 0,0 18,10A8,8 0 0,0 10,2M21.7,20.3L17.8,16.4L19.1,15.1L23,19L21.7,20.3Z" /></svg>
+                <input type="text" class="input" id="search3" placeholder="Search country..." oninput="searchCountries(3)">
+                <ul class="results" id="results3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
